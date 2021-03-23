@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <style>
+        div {
+            width: 150px;
+            height: 100px;
+            background-color: blue;
+            border: 1px solid pink;
+            padding: 5px;
+        }
+    </style>
+
+    <!-- jquery-->
+    <script src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+        // script untuk fade in, fade out, dan fade to gambar 
+        $(document).ready(function () {
+            $(".tombolfadein").click(function () {
+                $("div").fadeIn("slow")
+            })
+            $(".tombolfadeout").click(function () {
+                $("div").fadeOut("slow")
+            })
+            $(".tombolfadeto").click(function () {
+                $("div").fadeTo("slow", 0.3)
+            })
+        })
+    </script>
+
+</head>
+
+<body>
+    <div></div> <br>
+    <button class="tombolfadein">Fade In</button>
+    <button class="tombolfadeout">Fade Out</button>
+    <button class="tombolfadeto">Fade To 0.3</button>
+</body>
+
+</html>

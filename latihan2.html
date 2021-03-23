@@ -1,0 +1,72 @@
+<html>
+
+<head>
+    <style type="text/css">
+        #kotak1 {
+            width: 150px;
+            height: 150px;
+            background-color: violet;
+        }
+
+        #kotak2 {
+            width: 150px;
+            height: 150px;
+            background-color: violet;
+        }
+
+        #kotak3 {
+            width: 150px;
+            height: 150px;
+            background-color: violet;
+        }
+
+        #kotak4 {
+            width: 150px;
+            height: 150px;
+            background-color: violet;
+        }
+    </style>
+
+    <!-- tag untuk memasukan jquery ke dalam file-->
+    <script src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+        // script ubah warna dengan klik 2 kali 
+        $(document).ready(function () {
+            $(".persegi1").dblclick(function () {
+                $("#kotak1").css("background-color", "pink")
+            });
+            $(".persegi2").dblclick(function () {
+                $("#kotak2").css("background-color", "blue")
+            });
+            $(".persegi3").dblclick(function () {
+                $("#kotak3").css("background-color", "red")
+            });
+            $(".persegi4").dblclick(function () {
+                $("#kotak4").css("background-color", "white")
+            });
+        })
+    </script>
+
+</head>
+
+<body>
+    <table>
+        <tr>
+            <h1>Double Klik</h1>
+            <td>
+                <p id="kotak1" class="persegi1"></p>
+            </td>
+            <td>
+                <p id="kotak2" class="persegi2"></p>
+            </td>
+            <td>
+                <p id="kotak3" class="persegi3"></p>
+            </td>
+            <td>
+                <p id="kotak4" class="persegi4"></p>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
